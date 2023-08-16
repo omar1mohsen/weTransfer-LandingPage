@@ -47,11 +47,11 @@ cursor{
 .hero { 
     background: url('https://backgrounds.wetransfer.net/creator/wepresent/2307-p2/wp2_fs/1_k3pDXV/img.21ac3fda8b3740cd6d27.jpg');
     background-position: center; background-size: cover; background-repeat: no-repeat;
-    @apply text-white h-[100vh]  px-10 py-24 md:py-44 max-sm:flex  max-sm:justify-center  max-sm:items-start
+    @apply text-white h-[100vh]  px-10 py-32 md:py-44 max-sm:flex  max-sm:justify-center  max-sm:items-center
 }
 
 .cardContanier{
-    @apply w-fit bg-[--primary-color] py-2  rounded-lg shadow-[1px_2px_15px_-2px_rgba(0,0,0,0.3)] shadow-black
+    @apply w-fit bg-[--primary-color] max-md:bg-white/30  py-2  rounded-lg shadow-[1px_2px_15px_-2px_rgba(0,0,0,0.3)] shadow-black
 }
 
 .card-desc {
