@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color:#fff ;
+    --sec-color:#000 ;
+    --bg-color : #FFF6D3
+}
+
+body{
+    @apply overflow-hidden lg:cursor-none
+}
+
+
+/*navbar*/
+.nav{
+    @apply fixed z-50 top-0 left-0 flex justify-between items-center my-1 w-full
+}
+.nav-list{
+    @apply max-sm:absolute max-sm:right-2 max-sm:top-20 max-sm:w-[90%]
+}
+
+.navLinks {
+    @apply   flex text-[--sec-color] bg-[--primary-color] px-2 py-1.5 rounded-lg  
+}
+.navLink {
+    @apply px-4 border-e-2  font-semibold hover:bg-slate-200/50 transition border-slate-200 capitalize rounded-sm max-md:text-sm max-sm:text-lg my-2 
+}
+.dropMenuContanier{
+    @apply relative
+}
+.dropMenu{
+    @apply bg-[--primary-color] w-56 max-sm:w-full px-1 py-2 rounded-lg  absolute opacity-0 hidden sm:bottom-[-780%]  -left-1
+}
+.dropwMenuLink {
+    @apply flex justify-between items-center space-x-2
+}
+.showMenu{
+    @apply block opacity-100
+}
+
+/*hero*/
+cursor{
+    @apply bg-white p-5 w-10
+}
+.hero { 
+    background: url('https://backgrounds.wetransfer.net/creator/wepresent/2307-p2/wp2_fs/1_k3pDXV/img.21ac3fda8b3740cd6d27.jpg');
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    @apply text-white h-[100vh]  px-10 py-24 md:py-44 max-sm:flex  max-sm:justify-center  max-sm:items-start
+}
+
+.cardContanier{
+    @apply w-fit bg-[--primary-color] py-2  rounded-lg shadow-[1px_2px_15px_-2px_rgba(0,0,0,0.3)] shadow-black
+}
+
+.card-desc {
+    @apply ps-8 pe-16 pt-10
+}
+.card-desc .logo{
+    @apply bg-[--sec-color] p-1  w-fit rounded-[45%]
+}
+
+.card-desc .title {
+    @apply my-4 text-3xl text-[--sec-color]
+}
+
+.card-desc .desc{
+    @apply  text-[--sec-color] my-10
+}
+
+.line {
+    @apply mb-4 w-full bg-gray-400/50 h-0.5
+}
+.btn{
+    @apply py-2 px-12 my-2 font-semibold text-lg mx-auto rounded-2xl block bg-blue-500 hover:bg-blue-400 transition
+}
+/*pop hero*/
+.pop-sec{
+    @apply absolute max-md:bottom-10 max-md:right-10 max-md:translate-x-0  bottom-24 right-[17%] lg:translate-x-[-17%]
+}
+.pop-title{
+    @apply text-center text-3xl font-bold max-md:text-2xl my-2 text-shadow-lg tracking-wider
+}
+.pop-desc{
+    @apply text-lg font-semibold max-md:text-sm text-center text-shadow-lg tracking-wider
+}
+/* curoser */
+.main-Pointer {
+    @apply hidden lg:block  z-40 absolute translate-x-[-50%] translate-y-[-50%] w-20 rounded-[50%] pointer-events-none p-4 leading-5 text-center bg-[--primary-color]
+}
